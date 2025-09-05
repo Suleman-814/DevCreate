@@ -1,0 +1,17 @@
+capture:
+  mode: "live"        
+  interface: "Wi-Fi"
+  snaplen: 96
+  bpf: "ip"          
+flows:
+  active_timeout_s: 30
+  idle_timeout_s: 15
+  export_interval_s: 2
+anomaly:
+  model_path: "models/rf_model.joblib"
+  scaler_path: "models/scaler.joblib"
+  threshold: 0.5
+alerts:
+  out_file: "alerts.jsonl"
+  min_severity_to_log: 3
+  include_benign: False
