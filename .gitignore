@@ -1,170 +1,41 @@
-# Byte-compiled / optimized / DLL files
+# Node.js / JavaScript
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
 __pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
+*.pyc
+*.pyo
+*.pyd
 .env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# Project-specific
-# Model files (too large for git)
-models/*.joblib
-models/*.pkl
-models/*.h5
-models/*.model
-
-# Data files
-data/*.csv
-data/*.pcap
-data/*.json
-*.csv
-*.pcap
-
-# Generated output files
-alerts.jsonl
-*.jsonl
-
-# Generated plots and images
-confusion_matrix.png
-feature_importance.png
-*.png
-*.jpg
-*.jpeg
-
-# IDE files
+# VS Code
 .vscode/
-.idea/
-*.swp
-*.swo
+*.code-workspace
+
+# macOS
 .DS_Store
+
+# Windows
 Thumbs.db
 
-# Logs
-*.log
+# Data files (if too big)
+*.csv
+*.xlsx
 
-# Temporary files
-tmp/
-temp/
-.tmp
+# Secrets / credentials
+*.env
+.gitignore
+models/if_model_live.joblib
+models/label_encoder.joblib
+models/rf_model.joblib
+models/if_model.joblib
+venv/Lib/site-packages/contourpy-1.3.3.dist-info/INSTALLER
+venv/Lib/site-packages/contourpy-1.3.3.dist-info/LICENSE
+venv/Lib/site-packages/contourpy-1.3.3.dist-info/METADATA
+.gitignore
+venv/Lib/site-packages/contourpy-1.3.3.dist-info/RECORD
+venv/Lib/site-packages/contourpy-1.3.3.dist-info/WHEEL
+venv/Lib/site-packages/cycler-0.12.1.dist-info/INSTALLER
+venv/Lib/site-packages/cycler-0.12.1.dist-info/WHEEL

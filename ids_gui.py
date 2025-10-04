@@ -294,7 +294,7 @@ class IDSGui:
                 'export_interval_s': 2
             },
             'anomaly': {
-                'model_path': 'models/iso_forest.joblib',
+                'model_path': 'models/rf_model.joblib',
                 'contamination': 0.03
             },
             'alerts': {
@@ -614,7 +614,7 @@ class IDSGui:
 def main():
     """Main function to start the GUI"""
     # Check if model exists
-    if not os.path.exists("models/iso_forest.joblib"):
+    if not os.path.exists("models/rf_model.joblib"):
         print("❌ Model not found! Please train the model first:")
         print("   python train_ids.py")
         print("   python train_model.py")

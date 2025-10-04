@@ -1,6 +1,7 @@
 meta:
   name: "Capstone IDS Rules"
   version: "1.0"
+
 rules:
   - id: R1001
     name: "Blocklisted IP"
@@ -8,6 +9,7 @@ rules:
       src_ip_in: ["203.0.113.10", "198.51.100.42"]
     severity: 7
     description: "Traffic from known bad IP"
+
   - id: R1002
     name: "Suspicious Port Scan"
     when:
@@ -15,12 +17,14 @@ rules:
       window_seconds: 10
     severity: 6
     description: "Single source touching many ports quickly"
+
   - id: R1003
     name: "Keyword in Payload"
     when:
       payload_contains_any: ["select ", "union ", "or 1=1", "wget ", "curl "]
     severity: 5
     description: "SQLi or download attempt keyword"
+
   - id: R1004
     name: "High SYN Ratio"
     when:
@@ -28,3 +32,8 @@ rules:
       min_packets: 10
     severity: 5
     description: "Likely SYN scan or half-open behavior"
+
+capture:
+  mode: live
+  interface: "Ethernet 5"   # replace with your active interface
+  bpf: ""                   # capture all packets
