@@ -3,10 +3,6 @@ Python 3.7 or higher
 Administrator/root privileges (for live packet capture)
 Network interface access
 1. Installation
-# Clone the repository
-git clone https://github.com/yourusername/network-ids.git
-cd network-ids
-
 # Install dependencies
 pip install -r requirements.txt
 2. Model Training
